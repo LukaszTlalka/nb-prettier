@@ -1,19 +1,45 @@
 # Netblink Prettier Config
 
-### Install Prettier
+## Installation
+
+### Prettier + plugins
 ```bash
 npm install -D prettier prettier-plugin-tailwindcss @shufo/prettier-plugin-blade @prettier/plugin-php
 ```
 
-### Install Prettier Config
+### Prettier Config
 See: https://prettier.io/docs/en/configuration.html#sharing-configurations
 ```bash
 npm install --dev @netblink/nb-prettier
 ```
 
-### Config
+### Package.json
+Add this config to your project package.json
+```json
+"scripts": {
+    (...)
+    "prettier": "npx prettier */**/*.* --write --ignore-path ./.prettierignore",
+    "prettier-check": "npx prettier */**/*.* --check --ignore-path ./.prettierignore"
+},
+"prettier": "@netblink/nb-prettier",
+```
 
-##### VsCode
+### .prettierignore
+Copy the base .prettierignore file from this repo, so the prettier script will not change files inside `node_modules` or `vendor`.
+You can add more ignore rules according to your project.
+
+## Usage:
+#### Format files:
+```bash
+npm run prettier
+```
+
+#### Check if files are formatted properly:
+```bash
+npm run prettier-check
+```
+
+### VsCode
 Open User Settings (json) press `ctrl+p` and type `>User Settings (JSON)`, then copy this:
 ```json
 {
@@ -47,10 +73,4 @@ Open User Settings (json) press `ctrl+p` and type `>User Settings (JSON)`, then 
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 }
-```
-
-#### Package.json
-Add this config to your project package.json
-```json
-"prettier": "@netblink/nb-prettier",
 ```
