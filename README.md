@@ -18,8 +18,8 @@ Add this config to your project package.json
 ```json
 "scripts": {
     (...)
-    "prettier": "npx prettier */**/*.* --write --ignore-path ./.prettierignore",
-    "prettier-check": "npx prettier */**/*.* --check --ignore-path ./.prettierignore"
+    "prettier": "npx prettier **/* --write --ignore-path ./.prettierignore --ignore-unknown --list-different",
+    "prettier-check": "npx prettier **/* --check --ignore-path ./.prettierignore --ignore-unknown"
 },
 "prettier": "@netblink/nb-prettier",
 ```
