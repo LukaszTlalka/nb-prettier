@@ -1,32 +1,7 @@
 {
-  "$schema": "http://json.schemastore.org/prettierrc",
-  "trailingComma": "es5",
-  "tabWidth": 4,
-  "semi": false,
-  "singleQuote": true,
-  "plugins": [
-        "@prettier/plugin-php",
-        "@shufo/prettier-plugin-blade",
-        "prettier-plugin-tailwindcss"
-    ],
-    "overrides": [
-        {
-            "files": [
-                "*.blade.php"
-            ],
-            "options": {
-                "parser": "blade",
-                "tabWidth": 4
-            }
-        },
-        {
-            "files": [
-                "*.vue"
-            ],
-            "options": {
-                "printWidth": 150,
-                "htmlWhitespaceSensitivity": "ignore"
-            }
-        }
-    ]
+    "$schema": "http://json.schemastore.org/prettierrc",
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
 }
