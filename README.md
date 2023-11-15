@@ -2,18 +2,18 @@
 
 ## Installation
 
-### Prettier + plugins
+### (Step: 1) Prettier + plugins
 ```bash
 npm install -D prettier prettier-plugin-tailwindcss @shufo/prettier-plugin-blade @prettier/plugin-php
 ```
 
-### Prettier Config
+### (Step: 2) Prettier Config
 See: https://prettier.io/docs/en/configuration.html#sharing-configurations
 ```bash
 npm install --dev @netblink/nb-prettier
 ```
 
-### Package.json
+### (Step: 3) Package.json
 Add this config to your project package.json
 ```json
 "scripts": {
@@ -24,7 +24,7 @@ Add this config to your project package.json
 "prettier": "@netblink/nb-prettier",
 ```
 
-### .prettierignore
+### (Step: 4) .prettierignore
 Copy the base .prettierignore file from this repo, so the prettier script will not change files inside `node_modules` or `vendor`.
 You can add more ignore rules according to your project.
 
