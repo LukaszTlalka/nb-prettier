@@ -25,7 +25,7 @@ Add this config to your project package.json
 ```
 
 ### (Step: 4) .prettierignore
-Copy the base .prettierignore file from this repo, so the prettier script will not change files inside `node_modules` or `vendor`.
+Copy the base `.prettierignore` to the root of your app, so the prettier script will not change files inside `node_modules` or `vendor`.
 You can add more ignore rules according to your project.
 
 ## Usage:
