@@ -10,7 +10,7 @@ npm install -D prettier prettier-plugin-tailwindcss @shufo/prettier-plugin-blade
 ### (Step: 2) Prettier Config
 See: https://prettier.io/docs/en/configuration.html#sharing-configurations
 ```bash
-npm install --dev @netblink/nb-prettier
+npm install --dev git@github.com:LukaszTlalka/nb-prettier.git
 ```
 
 ### (Step: 3) Package.json
